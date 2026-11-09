@@ -1,0 +1,10 @@
+{
+  "name": "CloudPC TigerVNC Desktop",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "postStartCommand": "bash scripts/start-desktop.sh",
+  "remoteUser": "vscode"
+}
