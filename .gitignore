@@ -1,0 +1,12 @@
+# VNC / desktop runtime artifacts
+*.pem
+.vnc/
+*.log
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+
+# Local configuration overrides
+config/desktop.local.env
