@@ -1,5 +1,5 @@
 {
-  "name": "CloudPC TigerVNC Desktop",
+  "name": "Linux VNC Desktop",
   "build": {
     "dockerfile": "Dockerfile",
     "context": ".."
