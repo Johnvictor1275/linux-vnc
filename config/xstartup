@@ -1,11 +1,14 @@
-
 #!/usr/bin/env bash
+set -Eeuo pipefail
 
+# Remove inherited session variables that can conflict with XFCE.
 unset SESSION_MANAGER
 unset DBUS_SESSION_BUS_ADDRESS
 
+# Configure the X11 desktop session.
 export XDG_SESSION_TYPE=x11
 export XDG_CURRENT_DESKTOP=XFCE
 export XDG_SESSION_DESKTOP=xfce
 
+# Start XFCE inside its own D-Bus session.
 exec dbus-launch --exit-with-session startxfce4
