@@ -1,0 +1,11 @@
+
+#!/usr/bin/env bash
+
+unset SESSION_MANAGER
+unset DBUS_SESSION_BUS_ADDRESS
+
+export XDG_SESSION_TYPE=x11
+export XDG_CURRENT_DESKTOP=XFCE
+export XDG_SESSION_DESKTOP=xfce
+
+exec dbus-launch --exit-with-session startxfce4
